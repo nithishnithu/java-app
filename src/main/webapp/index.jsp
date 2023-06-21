@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Task Tracker 75 </title>
+    <title>Student Task Tracker </title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the Student Task  Tracker cc</h1>
+    <h1>Welcome to the Student Task  Tracker 75</h1>
 
     <form id="task-form">
         <label for="task-input">Task:</label>
