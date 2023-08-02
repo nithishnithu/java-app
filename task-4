@@ -1,0 +1,28 @@
+pipeline{
+    agent any
+    environment{
+        PATH="/opt/apache-maven-3.9.3/bin:${PATH}"
+    }
+    stages{
+        stage("git"){
+            steps{
+                git 'https://github.com/nithishnithu/java-app.git'
+            }
+        }
+            stage("build"){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
+        stage("test"){
+            steps{
+                sh 'mvn test'
+            }
+        }
+        stage("deploy"){
+        steps{
+            deploy adapters: [tomcat9(credentialsId: 'tomcat-user', path: '', url: 'http://13.233.95.112:8080/')], contextPath: null, war: '**/*.war'
+        }
+        }
+    }
+}
