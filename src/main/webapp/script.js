@@ -21,7 +21,7 @@ function addTask() {
 function displayStudentReports() {
     var studentList = document.querySelector('#student-list');
     studentList.innerHTML = '';
-
+    
     for (var studentId in studentReports) {
         if (studentReports.hasOwnProperty(studentId)) {
             var studentDiv = document.createElement('div');
