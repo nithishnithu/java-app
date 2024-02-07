@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Task Tracker nithish </title>
+    <title>Student Task Tracker nithish a </title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
