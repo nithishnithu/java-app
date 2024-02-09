@@ -1,4 +1,3 @@
-
 var studentReports = {};
 
 function addTask() {
